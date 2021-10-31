@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckNumber", "CheckNumber\CheckNumber.csproj", "{15EA3091-6135-41F6-AFA5-2300A697CBFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsymptCompl", "AsymptCompl\AsymptCompl.csproj", "{D6E9F6F3-C44E-44BC-8892-CA2F665E3AE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{15EA3091-6135-41F6-AFA5-2300A697CBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15EA3091-6135-41F6-AFA5-2300A697CBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15EA3091-6135-41F6-AFA5-2300A697CBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E9F6F3-C44E-44BC-8892-CA2F665E3AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E9F6F3-C44E-44BC-8892-CA2F665E3AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E9F6F3-C44E-44BC-8892-CA2F665E3AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E9F6F3-C44E-44BC-8892-CA2F665E3AE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
