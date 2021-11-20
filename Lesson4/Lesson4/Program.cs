@@ -16,18 +16,9 @@ namespace Test
             arrCl.GenArr(random, 3);
             var res1 = arrCl.IsInsert("TEST");
 
-            var hashSet = new HashSet<HashSetStr>();
-            var gener = new WordGen();
-            for (int i = 0; i < 3; i++)
-            {
-                string word = gener.GenString(random);
-                var hss = new HashSetStr();
-                hss.RandString = word;
-                hashSet.Add(hss);
-            }
-            var checkStr = new HashSetStr() { RandString = "TEST" };
-            hashSet.Add(checkStr);
-            var res2 = hashSet.Contains(checkStr);
+            var hsCl = new HashSetStr();
+            hsCl.GenHS(random, 3);
+            var res2 = hsCl.Equals("TEST");
             */
             BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
         }
@@ -48,18 +39,11 @@ namespace Test
         public void TestHashSet()
         {
             Random random = new Random();
-            var hashSet = new HashSet<HashSetStr>();
-            var gener = new WordGen();
-            for (int i = 0; i < 1000; i++)
-            {
-                var hss = new HashSetStr();
-                string word = gener.GenString(random);
-                hss.RandString = word;
-                hashSet.Add(hss);
-            }
-            var checkStr = new HashSetStr() { RandString = "TEST" };
-            hashSet.Add(checkStr);
-            var res2 = hashSet.Contains(checkStr);
+            var hsCl = new HashSetStr();
+            hsCl.GenHS(random, 1000);
+            var res2 = hsCl.Equals("TEST");
         }
     }
+    /*
+    */
 }

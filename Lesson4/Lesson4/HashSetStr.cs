@@ -8,20 +8,27 @@ namespace Test
 {
     class HashSetStr : WordGen
     {
-        public string RandString { get; set; }
+        public HashSet<string> UserHS;
 
+        public void GenHS(Random rand, int lenWords)
+        {
+            var hsWords = new HashSet<string>();
+            for (int i = 0; i < lenWords - 1; i++)
+            {
+                string word = GenString(rand);
+                hsWords.Add(word);
+            }
+            hsWords.Add("TEST");
+            UserHS = hsWords;
+        }
+        
         public override bool Equals(object obj)
         {
-            var str = obj as HashSetStr;
+            var str = obj as string;
             if (str == null)
                 return false;
-            return RandString == str.RandString;
+            return UserHS.Contains(str);
         }
 
-        public override int GetHashCode()
-        {
-            int wordHashCode = RandString?.GetHashCode() ?? 0;
-            return wordHashCode;
-        }
     }
 }
